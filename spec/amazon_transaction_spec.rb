@@ -3,7 +3,6 @@ describe 'AmazonTransaction' do
   let(:amazon_transaction) { AmazonTransaction.new }
   let(:amazon_transaction_with_discount) { AmazonTransaction.new(20) }
 
-
   describe '::new' do
     it 'sets an instance variable for @total on initialization to zero' do
       expect(amazon_transaction.instance_variable_get(:@total)).to eq(0)
